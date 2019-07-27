@@ -4,7 +4,8 @@
   "description": "This is a Web server Example Project",
   "main": "index.js",
   "scripts": {
-    "start":"node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs,css"
   },
   "keywords": [],
   "author": "Faizan Aqeel with the help of Udemy course",
@@ -15,5 +16,8 @@
     "express": "^4.17.1",
     "hbs": "^4.0.4",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
