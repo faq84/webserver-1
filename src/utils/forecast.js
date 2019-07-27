@@ -11,7 +11,7 @@ const forecast =(lat, long, callback)=>{
         }else if(body.code===400){
         callback('Longitude and latitude incorrect! ',undefined)
         }else{
-        callback(undefined,body.daily.data[0].summary+'. It is currently '+body.currently.temperature+'°C out. There is '+body.currently.precipProbability+'% chance of rain.')
+        callback(undefined,body.daily.data[0].summary+'. It is currently '+body.currently.temperature+'°C out. There is '+body.currently.precipProbability+'% chance of rain. The Highest Temprature supposed to reach is '+ body.daily.data[0].temperatureHigh+' & the lowest for the day is ' +body.daily.data[0].temperatureLow+'.')
     }
     
     })
