@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast.js')
 // console.log(path.join(__dirname,'../public'))
 
 const app=express()
+const port = process.env.PORT || 8080
 //Define Path for Express config
 const publicDirectPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -127,6 +128,6 @@ app.use(function(req, res, next) {
   }); 
 
 
-app.listen(8080,()=>{
-    console.log('Server is up on Port 8080')
+app.listen(port,()=>{
+    console.log('Server is up on Port '+port)
 })

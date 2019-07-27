@@ -4,7 +4,7 @@
   "description": "This is a Web server Example Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node src/app.js"
   },
   "keywords": [],
   "author": "Faizan Aqeel with the help of Udemy course",
