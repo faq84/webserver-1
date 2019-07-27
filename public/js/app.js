@@ -30,7 +30,7 @@ weatherForm.addEventListener('submit',(event)=>{
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
     fetch('http://localhost:8080/weather?city='+location, {'mode': 'no-cors'}).then((response)=>{
-        response.json().then((data)=>{
+        response.json().then((data)=> {
             if(data.error){
                 //console.log(data.error)
                 messageOne.textContent = data.error
